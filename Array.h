@@ -8,9 +8,9 @@ class ArrayException {};
 template <class T> class Array
 {
 private:
-	T* ptr;						// указатель на массив в динамической памяти
-	unsigned int size;			// текущий размер массива
-	unsigned int capacity;		// общая вместимость массива
+	T* ptr;						// СѓРєР°Р·Р°С‚РµР»СЊ РЅР° РјР°СЃСЃРёРІ РІ РґРёРЅР°РјРёС‡РµСЃРєРѕР№ РїР°РјСЏС‚Рё
+	unsigned int size;			// С‚РµРєСѓС‰РёР№ СЂР°Р·РјРµСЂ РјР°СЃСЃРёРІР°
+	unsigned int capacity;		// РѕР±С‰Р°СЏ РІРјРµСЃС‚РёРјРѕСЃС‚СЊ РјР°СЃСЃРёРІР°
 	void increaseCapacity(unsigned int newCapacity);
 public:
 	explicit Array(unsigned int startCapacity = DEFAULT_CAPACITY, T elem = (T)0);
@@ -43,7 +43,7 @@ public:
 		return out;
 	}
 
-	// Функции шаблона <vector>
+	// Р¤СѓРЅРєС†РёРё С€Р°Р±Р»РѕРЅР° <vector>
 	void resize(unsigned int newSize);
 	void resize(unsigned int newSize, T elem);
 	void reserve(unsigned int newCapacity);
